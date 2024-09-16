@@ -4,15 +4,15 @@
     <title>Shuo Wu's Website</title>
     <meta name="generator" content="MoganSTEMSuite 1.2.9" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="../resources/notes-base.css" />
-    <link rel="icon" href="../resources/blog-icon.png" />
-    <script language="javascript" defer src="../resources/highlight.pack.js"></script>
-    <script language="javascript" defer src="../resources/notes-base.js"></script>
+    <link type="text/css" href="../resources/notes-base.css" rel="stylesheet" />
+    <link href="../resources/blog-icon.png" rel="icon" />
+    <script src="../resources/highlight.pack.js" language="javascript" defer></script>
+    <script src="../resources/notes-base.js" language="javascript" defer></script>
   </head>
   <body>
     <div class="notes-header">
       <p>
-        <img width="28.116784" class="image" src="../resources/texmacs-blog-transparent.png" /><span style="margin-left: 2pt"></span><a href="./main.html">[main]</a><em
+        <img class="image" src="../resources/texmacs-blog-transparent.png" width="28.116784" /><span style="margin-left: 2pt"></span><a href="./main.html">[main]</a><em
         class="notes-header-name">Shuo Wu's Website</em>
       </p>
     </div>
@@ -30,78 +30,78 @@
     <h2 id="auto-2">1.<span style="margin-left: 1em"></span>Worst-case cost and worst-case regret
     cost<span style="margin-left: 1em"></span></h2>
     <p>
-      Consider the function <img style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.28650505050505054em; height: 0.8274747474747475em" src="regret_ol-1.png" /> defined as <span class="no-breaks"><img
-      style="margin-left: -0.062060606060606066em; margin-bottom: -0.026222222222222258em; margin-right: -0.020686868686868642em; margin-top: -0.031030303030302964em; vertical-align: -0.8967272727272727em; height: 1.709050505050505em" src="regret_ol-2.png" />,</span> where <img style="margin-left: -0.19652525252525252em; margin-bottom: -0.013454545454545441em; margin-right: -0.14690909090909093em; margin-top: -0.048646464646464604em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" src="regret_ol-3.png" /> is an arbitrary
+      Consider the function <img src="regret_ol-1.png" style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.28650505050505054em; height: 0.8274747474747475em" /> defined as <span class="no-breaks"><img
+      src="regret_ol-2.png" style="margin-left: -0.062060606060606066em; margin-bottom: -0.026222222222222258em; margin-right: -0.020686868686868642em; margin-top: -0.031030303030302964em; vertical-align: -0.8967272727272727em; height: 1.709050505050505em" />,</span> where <img src="regret_ol-3.png" style="margin-left: -0.19652525252525252em; margin-bottom: -0.013454545454545441em; margin-right: -0.14690909090909093em; margin-top: -0.048646464646464604em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" /> is an arbitrary
       function. The optimization problem defined as
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><img style="margin-left: -0.020686868686868688em; margin-bottom: -0.026222222222222258em; margin-right: -0.020686868686867754em; margin-top: -0.048646464646464604em; vertical-align: -0.8967272727272727em; height: 1.709050505050505em" src="regret_ol-4.png" /></td>
+        <td align="center" width="100%"><img src="regret_ol-4.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.026222222222222258em; margin-right: -0.020686868686867754em; margin-top: -0.048646464646464604em; vertical-align: -0.8967272727272727em; height: 1.709050505050505em" /></td>
         <td align="right">(1)</td>
       </tr>
     </table>
     <p>
-      can be viewed as a worst-case optimization problem, and <img style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.041373737373737396em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" src="regret_ol-5.png"
+      can be viewed as a worst-case optimization problem, and <img src="regret_ol-5.png" style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.041373737373737396em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em"
       /> is called <i>worst-case cost</i>.
     </p>
     <p>
-      Let's consider a scenario where we have <img style="margin-left: -0.19652525252525252em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: -0.048646464646464604em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" src="regret_ol-6.png" /> that
+      Let's consider a scenario where we have <img src="regret_ol-6.png" style="margin-left: -0.19652525252525252em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: -0.048646464646464604em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" /> that
       represents the time required to drive a car from one location to another
-      given policy <img style="margin-left: -0.020686868686868688em; margin-bottom: -0.01967676767676768em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.011353535353535352em; height: 0.5482020202020202em" src="regret_ol-7.png" /> and environment <span class="no-breaks"><img
-      style="margin-left: -0.031030303030303033em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.28650505050505054em; height: 0.8171313131313132em" src="regret_ol-8.png" />.</span> In this context, <img style="margin-left: -0.020686868686868688em; margin-bottom: -0.01967676767676768em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.011353535353535352em; height: 0.5482020202020202em" src="regret_ol-7.png" /> represents
-      the driver's driving pattern, which encompass decisions like adjusting
+      given policy <img src="regret_ol-7.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.01967676767676768em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.011353535353535352em; height: 0.5482020202020202em" /> and environment <span class="no-breaks"><img src="regret_ol-8.png"
+      style="margin-left: -0.031030303030303033em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.28650505050505054em; height: 0.8171313131313132em" />.</span> In this context, <img src="regret_ol-7.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.01967676767676768em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.011353535353535352em; height: 0.5482020202020202em" /> represents the
+      driver's driving pattern, which encompass decisions like adjusting
       speed, selecting lanes (left or right), and other driving strategies. On
-      the other hand, <img style="margin-left: -0.031030303030303033em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.28650505050505054em; height: 0.8171313131313132em" src="regret_ol-8.png" /> represents a binary condition
-      indicating whether it's currently raining (<span class="no-breaks"><img style="margin-left: -0.031030303030303033em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: 0em; vertical-align: -0.28650505050505054em; height: 1.0343434343434343em" src="regret_ol-9.png"
-      />)</span> or not (<span class="no-breaks"><img style="margin-left: -0.031030303030303033em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: 0em; vertical-align: -0.28650505050505054em; height: 1.0343434343434343em" src="regret_ol-10.png" />).</span> Together,
+      the other hand, <img src="regret_ol-8.png" style="margin-left: -0.031030303030303033em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.28650505050505054em; height: 0.8171313131313132em" /> represents a binary condition
+      indicating whether it's currently raining (<span class="no-breaks"><img src="regret_ol-9.png" style="margin-left: -0.031030303030303033em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: 0em; vertical-align: -0.28650505050505054em; height: 1.0343434343434343em"
+      />)</span> or not (<span class="no-breaks"><img src="regret_ol-10.png" style="margin-left: -0.031030303030303033em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: 0em; vertical-align: -0.28650505050505054em; height: 1.0343434343434343em" />).</span> Together,
       this function captures how the driver's decisions and weather conditions
       collectively impact the time it takes for the journey.
     </p>
     <p>
       It's a widely acknowledged fact that driving takes more time on days
-      when it's raining. Thus, <span class="no-breaks"><img style="margin-left: -0.020686868686868688em; margin-bottom: -0.026222222222222258em; margin-right: -0.02068686868686953em; margin-top: -0.048646464646464604em; vertical-align: -0.8967272727272727em; height: 1.709050505050505em" src="regret_ol-11.png" />.</span> By
-      definition, the function <img style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.041373737373737396em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" src="regret_ol-5.png" /> currently represents the
+      when it's raining. Thus, <span class="no-breaks"><img src="regret_ol-11.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.026222222222222258em; margin-right: -0.02068686868686953em; margin-top: -0.048646464646464604em; vertical-align: -0.8967272727272727em; height: 1.709050505050505em" />.</span> By
+      definition, the function <img src="regret_ol-5.png" style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.041373737373737396em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" /> currently represents the
       time required for driving on rainy days.
     </p>
     <p>
-      Now, define <span class="no-breaks"><img style="margin-left: -0.062060606060606066em; margin-bottom: -0.026222222222222258em; margin-right: 0em; margin-top: -0.015353535353535452em; vertical-align: -0.8967272727272727em; height: 2.099151515151515em" src="regret_ol-12.png" />.</span> We call <img style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.28650505050505054em; height: 1.2946262626262626em"
-      src="regret_ol-13.png" /> the <i>worst-case regret cost</i>. Unlike worst-case cost, the
+      Now, define <span class="no-breaks"><img src="regret_ol-12.png" style="margin-left: -0.062060606060606066em; margin-bottom: -0.026222222222222258em; margin-right: 0em; margin-top: -0.015353535353535452em; vertical-align: -0.8967272727272727em; height: 2.099151515151515em" />.</span> We call <img src="regret_ol-13.png"
+      style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.28650505050505054em; height: 1.2946262626262626em" /> the <i>worst-case regret cost</i>. Unlike worst-case cost, the
       regret cost measures the maximum achievement <b>it can be improved</b>
       in the past days. For example, if a driver cannot drive in the rainy day
       due to rheumatoid arthritis. Then there is no difference between <img
-      style="margin-left: -0.19652525252525252em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: -0.048646464646464604em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" src="regret_ol-14.png" /> and <img style="margin-left: -0.19652525252525252em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.28650505050505054em; height: 1.2842828282828282em" src="regret_ol-15.png" /> for any <img style="margin-left: -0.020686868686868688em; margin-bottom: -0.01967676767676768em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.011353535353535352em; height: 0.5482020202020202em" src="regret_ol-7.png" /> and
-      <span class="no-breaks"><img style="margin-left: -0.020686868686868688em; margin-bottom: -0.01967676767676768em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.011353535353535352em; height: 1.0153535353535355em" src="regret_ol-16.png" />,</span> which makes <span class="no-breaks"><img
-      style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686869087em; margin-top: -0.010343434343434321em; vertical-align: -0.28650505050505054em; height: 1.2946262626262626em" src="regret_ol-17.png" />.</span> No regret at all! Because nothing can be improved
+      src="regret_ol-14.png" style="margin-left: -0.19652525252525252em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: -0.048646464646464604em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" /> and <img src="regret_ol-15.png" style="margin-left: -0.19652525252525252em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.28650505050505054em; height: 1.2842828282828282em" /> for any <img src="regret_ol-7.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.01967676767676768em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.011353535353535352em; height: 0.5482020202020202em" /> and
+      <span class="no-breaks"><img src="regret_ol-16.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.01967676767676768em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.011353535353535352em; height: 1.0153535353535355em" />,</span> which makes <span class="no-breaks"><img
+      src="regret_ol-17.png" style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686869087em; margin-top: -0.010343434343434321em; vertical-align: -0.28650505050505054em; height: 1.2946262626262626em" />.</span> No regret at all! Because nothing can be improved
       in the worst-case.
     </p>
     <h2 id="auto-3">2.<span style="margin-left: 1em"></span>An example that minimizes regret cost
     results in a better policy<span style="margin-left: 1em"></span></h2>
     <p>
-      Consider the function <img style="margin-left: -0.19652525252525252em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: -0.048646464646464604em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" src="regret_ol-6.png" /> as follows:
+      Consider the function <img src="regret_ol-6.png" style="margin-left: -0.19652525252525252em; margin-bottom: -0.013454545454545441em; margin-right: -0.020686868686868642em; margin-top: -0.048646464646464604em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" /> as follows:
     </p>
     <center>
-      <img style="margin-left: -0.06719191919191919em; margin-bottom: -0.06719191919191925em; margin-right: -0.020686868686868642em; margin-top: -0.06719191919191925em; vertical-align: -2.3642828282828283em; height: 5.361454545454546em" src="regret_ol-18.png" />
+      <img src="regret_ol-18.png" style="margin-left: -0.06719191919191919em; margin-bottom: -0.06719191919191925em; margin-right: -0.020686868686868642em; margin-top: -0.06719191919191925em; vertical-align: -2.3642828282828283em; height: 5.361454545454546em" />
     </center>
     <p>
       
     </p>
     <p>
-      The worst-case cost <img style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.041373737373737396em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" src="regret_ol-5.png" /> in this example is <img style="margin-left: -0.020686868686868688em; margin-bottom: -0.026222222222222258em; margin-right: -0.020686868686867754em; margin-top: -0.048646464646464604em; vertical-align: -0.8967272727272727em; height: 1.709050505050505em"
-      src="regret_ol-19.png" /> for any <span class="no-breaks"><img style="margin-left: -0.020686868686868688em; margin-bottom: -0.01967676767676768em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.011353535353535352em; height: 0.5482020202020202em" src="regret_ol-7.png" />.</span> Thus,
+      The worst-case cost <img src="regret_ol-5.png" style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.041373737373737396em; vertical-align: -0.28650505050505054em; height: 1.086060606060606em" /> in this example is <img src="regret_ol-19.png"
+      style="margin-left: -0.020686868686868688em; margin-bottom: -0.026222222222222258em; margin-right: -0.020686868686867754em; margin-top: -0.048646464646464604em; vertical-align: -0.8967272727272727em; height: 1.709050505050505em" /> for any <span class="no-breaks"><img src="regret_ol-7.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.01967676767676768em; margin-right: -0.020686868686868753em; margin-top: 0.018585858585858595em; vertical-align: -0.011353535353535352em; height: 0.5482020202020202em" />.</span> Thus,
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><img style="margin-left: -0.020686868686868688em; margin-bottom: -0.023474747474747426em; margin-right: -0.02068686868686953em; margin-top: -0.041373737373737396em; vertical-align: -0.7132929292929293em; height: 1.5125252525252524em" src="regret_ol-20.png" /></td>
+        <td align="center" width="100%"><img src="regret_ol-20.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.023474747474747426em; margin-right: -0.02068686868686953em; margin-top: -0.041373737373737396em; vertical-align: -0.7132929292929293em; height: 1.5125252525252524em" /></td>
         <td align="right">(2)</td>
       </tr>
     </table>
     <p>
-      But for the worst-case regret cost, <img style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.28650505050505054em; height: 1.2946262626262626em" src="regret_ol-21.png" /> and <span class="no-breaks"><img
-      style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.28650505050505054em; height: 1.2946262626262626em" src="regret_ol-22.png" />.</span> Thus
+      But for the worst-case regret cost, <img src="regret_ol-21.png" style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.28650505050505054em; height: 1.2946262626262626em" /> and <span class="no-breaks"><img
+      src="regret_ol-22.png" style="margin-left: -0.062060606060606066em; margin-bottom: -0.023797979797979762em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.28650505050505054em; height: 1.2946262626262626em" />.</span> Thus
     </p>
     <table width="100%">
       <tr>
-        <td width="100%" align="center"><img style="margin-left: -0.020686868686868688em; margin-bottom: -0.023474747474747426em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.7132929292929293em; height: 1.721090909090909em" src="regret_ol-23.png" /></td>
+        <td align="center" width="100%"><img src="regret_ol-23.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.023474747474747426em; margin-right: -0.020686868686868642em; margin-top: -0.010343434343434321em; vertical-align: -0.7132929292929293em; height: 1.721090909090909em" /></td>
         <td align="right">(3)</td>
       </tr>
     </table>
@@ -115,15 +115,15 @@
       driver who refrains from driving on rainy days. In this case, data
       points (representing the time taken to travel between places) within a
       one-hour time-frame might have a probability of collection as low as
-      <span class="no-breaks"><img style="margin-left: -0.020686868686868688em; margin-bottom: -0.019676767676767678em; margin-right: -0.020686868686868753em; margin-top: 0em; vertical-align: -0.021696969696969697em; height: 0.7757575757575758em" src="regret_ol-24.png" />.</span> Conversely, data points beyond
+      <span class="no-breaks"><img src="regret_ol-24.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.019676767676767678em; margin-right: -0.020686868686868753em; margin-top: 0em; vertical-align: -0.021696969696969697em; height: 0.7757575757575758em" />.</span> Conversely, data points beyond
       one hour might possess a probability of collection greater than <span
-      class="no-breaks"><img style="margin-left: -0.020686868686868688em; margin-bottom: -0.019676767676767678em; margin-right: -0.020686868686868753em; margin-top: 0em; vertical-align: -0.021696969696969697em; height: 0.7757575757575758em" src="regret_ol-24.png" />.</span> This implies that data collected on
+      class="no-breaks"><img src="regret_ol-24.png" style="margin-left: -0.020686868686868688em; margin-bottom: -0.019676767676767678em; margin-right: -0.020686868686868753em; margin-top: 0em; vertical-align: -0.021696969696969697em; height: 0.7757575757575758em" />.</span> This implies that data collected on
       different dates adhere to distinct distributions. This distinction
       underscores a crucial difference between traditional offline learning
       and online learning.
     </p>
     <h1 id="auto-5">Bibliography<span style="margin-left: 1em"></span></h1>
-    <div style="text-indent: 0em" class="compact-block">
+    <div class="compact-block" style="text-indent: 0em">
       <font style="font-size: 84.0%"><dl>
         <p>
           <dt>

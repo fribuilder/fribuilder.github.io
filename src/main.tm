@@ -9,9 +9,11 @@
 
   I am a Ph.D. student in the Electrical and Computer Engineering Department
   at the University of Illinois Chicago. I am very fortunate to be advised by
-  Prof. <hlink|Shuo Han|https://hanshuo.people.uic.edu/site/>. I received my
-  bachelors in Department of Mathematics at the <hlink|Southern University of
-  Science and Technology|https://www.sustech.edu.cn/en/>.
+  Prof. <hlink|Shuo Han|https://hanshuo.people.uic.edu/site/>. I am also
+  co-advised by Prof. <hlink|Jie Fu|https://fujie.ece.ufl.edu/> at University
+  of Florida. Before my Ph.D., I received my bachelor in Department of
+  Mathematics at the <hlink|Southern University of Science and
+  Technology|https://www.sustech.edu.cn/en/>.
 
   My primary research interests lie in reinforcement learning and game
   theory. Currently, I am working on combining model-based RL with model-free
