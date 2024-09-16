@@ -36,7 +36,7 @@
 
   \;
 
-  <assign|html-title|TeXmacs notes>
+  <assign|html-title|Shuo Wu's Website>
 
   <assign|html-css|../resources/notes-base.css>
 
@@ -56,7 +56,7 @@
 
   <assign|hlink-tm|<macro|body|target|<hlink|<arg|body>|<merge|<arg|target>|.tm>>>>
 
-  <assign|notes-header-name|Notes on TeXmacs>
+  <assign|notes-header-name|Shuo Wu's Website>
 
   <assign|notes-header-image|<image|../resources/texmacs-blog-transparent.png|20pt|||>>
 
