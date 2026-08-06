@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-labelledby="casc-t casc-d" font-family="inherit">
+  <title id="casc-t">Inter-Cascade turns each expensive hand-off into a reusable strategy</title>
+  <desc id="casc-d">A weak, cheap model handles most queries. When it is not confident it defers the query to a strong, expensive model. The strong model returns an answer and also writes a generalized, reusable strategy into a repository. On a later similar query that strategy is retrieved into the weak model's context, so the weak model can answer locally instead of deferring again.</desc>
+
+  <defs>
+    <marker id="casc-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 Z" fill="currentColor"/>
+    </marker>
+    <marker id="casc-ar-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 Z" fill="var(--accent, #2f6fed)"/>
+    </marker>
+  </defs>
+
+  <!-- weak model -->
+  <rect x="14" y="26" width="100" height="50" rx="9" fill="var(--card, #fff)" stroke="currentColor" stroke-width="1.5"/>
+  <text x="64" y="48" text-anchor="middle" font-size="14" fill="currentColor">Weak model</text>
+  <text x="64" y="65" text-anchor="middle" font-size="11" fill="var(--muted, #666)">cheap</text>
+
+  <!-- strong model -->
+  <rect x="224" y="26" width="122" height="50" rx="9" fill="var(--card, #fff)" stroke="currentColor" stroke-width="1.5"/>
+  <text x="285" y="48" text-anchor="middle" font-size="14" fill="currentColor">Strong model</text>
+  <text x="285" y="65" text-anchor="middle" font-size="11" fill="var(--muted, #666)">expensive</text>
+
+  <!-- defer -->
+  <path d="M114,51 H220" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#casc-ar)"/>
+  <text x="167" y="42" text-anchor="middle" font-size="11.5" fill="var(--muted, #666)">defers a hard query</text>
+
+  <!-- strategy repository -->
+  <rect x="196" y="132" width="150" height="48" rx="9" fill="var(--card, #fff)" stroke="var(--accent, #2f6fed)" stroke-width="1.5"/>
+  <text x="271" y="153" text-anchor="middle" font-size="13" fill="var(--accent, #2f6fed)">Strategy repository</text>
+  <text x="271" y="169" text-anchor="middle" font-size="10.5" fill="var(--muted, #666)">generalized, reusable</text>
+
+  <!-- strong -> repo -->
+  <path d="M285,76 V128" fill="none" stroke="var(--accent, #2f6fed)" stroke-width="1.5" marker-end="url(#casc-ar-a)"/>
+  <text x="277" y="107" text-anchor="end" font-size="11" fill="var(--accent, #2f6fed)">writes a strategy</text>
+
+  <!-- repo -> weak -->
+  <path d="M196,156 H64 V80" fill="none" stroke="var(--accent, #2f6fed)" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#casc-ar-a)"/>
+  <text x="130" y="148" text-anchor="middle" font-size="11" fill="var(--accent, #2f6fed)">retrieved next time</text>
+
+  <text x="180" y="196" text-anchor="middle" font-size="10.5" fill="var(--muted, #666)">The weak model improves during use — no retraining.</text>
+</svg>

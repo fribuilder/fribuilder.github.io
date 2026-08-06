@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" role="img" aria-labelledby="obs-t obs-d" font-family="inherit">
+  <title id="obs-t">Herding as a random walk with two absorbing boundaries</title>
+  <desc id="obs-d">A horizontal line tracks a running tally of the decisions made so far. Each time an agent declines, the tally takes a short step right; each time an agent buys, it takes a longer step left. While the tally stays between the two boundaries, every agent is still acting on its own private information. Once it crosses either boundary a cascade begins and, by the paper's Property 1, it lasts forever, so every later agent simply copies and reveals nothing.</desc>
+
+  <defs>
+    <marker id="obs-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 Z" fill="currentColor"/>
+    </marker>
+    <marker id="obs-ar-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 Z" fill="var(--accent, #2f6fed)"/>
+    </marker>
+  </defs>
+
+  <text x="180" y="26" text-anchor="middle" font-size="12" fill="var(--accent, #2f6fed)">long step left when an agent buys</text>
+  <text x="180" y="44" text-anchor="middle" font-size="12" fill="currentColor">short step right when an agent declines</text>
+
+  <!-- the two step sizes -->
+  <path d="M194,112 Q203,92 212,112" fill="none" stroke="currentColor" stroke-width="1.6" marker-end="url(#obs-ar)"/>
+  <path d="M212,112 Q166,64 120,112" fill="none" stroke="var(--accent, #2f6fed)" stroke-width="1.6" marker-end="url(#obs-ar-a)"/>
+
+  <!-- absorbing zones -->
+  <rect x="20" y="110" width="76" height="16" fill="var(--line, #e7e7e7)"/>
+  <rect x="284" y="110" width="56" height="16" fill="var(--line, #e7e7e7)"/>
+
+  <!-- the tally line -->
+  <line x1="20" y1="118" x2="340" y2="118" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="96" y1="108" x2="96" y2="128" stroke="currentColor" stroke-width="2"/>
+  <line x1="284" y1="108" x2="284" y2="128" stroke="currentColor" stroke-width="2"/>
+  <circle cx="194" cy="118" r="3.5" fill="currentColor"/>
+
+  <text x="58" y="146" text-anchor="middle" font-size="10.5" fill="var(--muted, #666)">cascade begins</text>
+  <text x="58" y="159" text-anchor="middle" font-size="10.5" fill="var(--muted, #666)">and never ends</text>
+  <text x="312" y="146" text-anchor="middle" font-size="10.5" fill="var(--muted, #666)">cascade begins</text>
+  <text x="312" y="159" text-anchor="middle" font-size="10.5" fill="var(--muted, #666)">and never ends</text>
+
+  <text x="180" y="184" text-anchor="middle" font-size="10.5" fill="currentColor">Between the boundaries each agent still reveals what it knows.</text>
+  <text x="180" y="200" text-anchor="middle" font-size="10.5" fill="var(--muted, #666)">Past a boundary, everyone copies and learning stops.</text>
+</svg>

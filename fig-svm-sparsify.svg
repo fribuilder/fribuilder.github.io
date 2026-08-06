@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-labelledby="svm-t svm-d" font-family="inherit">
+  <title id="svm-t">Sampling a dense classifier down to a fixed feature budget</title>
+  <desc id="svm-d">On the left, a trained linear classifier with a weight on every feature, drawn as a stack of bars of differing length. Coordinates are then sampled with probability proportional to the size of their weight, counted, rescaled and given their signs back. On the right, the result keeps only a few features, drawn as three bars with the rest empty. The sparse classifier is unbiased, so its margin matches the dense one in expectation.</desc>
+
+  <defs>
+    <marker id="svm-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <text x="52" y="30" text-anchor="middle" font-size="12" fill="currentColor">every feature</text>
+
+  <!-- dense weights -->
+  <g fill="currentColor" fill-opacity="0.4">
+    <rect x="22" y="42"  width="46" height="8" rx="2"/>
+    <rect x="22" y="56"  width="12" height="8" rx="2"/>
+    <rect x="22" y="70"  width="30" height="8" rx="2"/>
+    <rect x="22" y="84"  width="6"  height="8" rx="2"/>
+    <rect x="22" y="98"  width="52" height="8" rx="2"/>
+    <rect x="22" y="112" width="18" height="8" rx="2"/>
+    <rect x="22" y="126" width="9"  height="8" rx="2"/>
+    <rect x="22" y="140" width="24" height="8" rx="2"/>
+  </g>
+
+  <!-- transform -->
+  <text x="180" y="76" text-anchor="middle" font-size="11.5" fill="currentColor">sample coordinates</text>
+  <text x="180" y="90" text-anchor="middle" font-size="11.5" fill="currentColor">in proportion to weight</text>
+  <path d="M104,100 H256" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#svm-ar)"/>
+  <text x="180" y="120" text-anchor="middle" font-size="11" fill="var(--muted, #666)">tally · rescale · restore signs</text>
+
+  <text x="308" y="30" text-anchor="middle" font-size="12" fill="var(--accent, #2f6fed)">a fixed few</text>
+
+  <!-- sparse weights -->
+  <g fill="var(--accent, #2f6fed)">
+    <rect x="270" y="42"  width="58" height="8" rx="2"/>
+    <rect x="270" y="98"  width="66" height="8" rx="2"/>
+    <rect x="270" y="140" width="32" height="8" rx="2"/>
+  </g>
+  <g fill="var(--line, #e7e7e7)">
+    <rect x="270" y="56"  width="4" height="8" rx="2"/>
+    <rect x="270" y="70"  width="4" height="8" rx="2"/>
+    <rect x="270" y="84"  width="4" height="8" rx="2"/>
+    <rect x="270" y="112" width="4" height="8" rx="2"/>
+    <rect x="270" y="126" width="4" height="8" rx="2"/>
+  </g>
+
+  <text x="180" y="176" text-anchor="middle" font-size="10.5" fill="var(--muted, #666)">Unbiased, so the margin survives in expectation; repeating the</text>
+  <text x="180" y="190" text-anchor="middle" font-size="10.5" fill="var(--muted, #666)">draw and keeping the best gives a deterministic guarantee.</text>
+</svg>

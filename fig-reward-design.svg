@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" role="img" aria-labelledby="rrd-t rrd-d" font-family="inherit">
+  <title id="rrd-t">Sitting inside the region of optimal solutions, not on its edge</title>
+  <desc id="rrd-d">A shaded polygon represents the region of reward allocations that are optimal for the leader. The standard solution sits on the boundary of that region, so a single unfavorable tie-break by the follower pushes the outcome outside it and the leader's payoff falls to 0.248 on the attack-graph benchmark. The proposed interior-point solution sits strictly inside the region with a margin around it, so every best response the follower might choose still leaves the leader at 0.655.</desc>
+
+  <defs>
+    <marker id="rrd-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 Z" fill="currentColor"/>
+    </marker>
+    <marker id="rrd-ar-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 Z" fill="var(--accent, #2f6fed)"/>
+    </marker>
+  </defs>
+
+  <text x="190" y="22" text-anchor="middle" font-size="11.5" fill="var(--muted, #666)">region of optimal reward allocations</text>
+
+  <polygon points="90,44 200,32 268,62 282,116 200,148 108,134"
+           fill="var(--line, #e7e7e7)" fill-opacity="0.55"
+           stroke="currentColor" stroke-width="1.5"/>
+
+  <!-- standard solution: on the boundary -->
+  <path d="M99,89 L62,84" fill="none" stroke="currentColor" stroke-width="1.4" marker-end="url(#rrd-ar)"/>
+  <circle cx="99" cy="89" r="5" fill="currentColor"/>
+
+  <!-- interior-point solution: inside, with margin -->
+  <circle cx="190" cy="90" r="32" fill="none" stroke="var(--accent, #2f6fed)" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <g stroke="var(--accent, #2f6fed)" stroke-width="1.4" fill="none">
+    <path d="M190,90 L190,66" marker-end="url(#rrd-ar-a)"/>
+    <path d="M190,90 L214,90" marker-end="url(#rrd-ar-a)"/>
+    <path d="M190,90 L190,114" marker-end="url(#rrd-ar-a)"/>
+    <path d="M190,90 L166,90" marker-end="url(#rrd-ar-a)"/>
+  </g>
+  <circle cx="190" cy="90" r="5" fill="var(--accent, #2f6fed)"/>
+  <text x="190" y="136" text-anchor="middle" font-size="10.5" fill="var(--accent, #2f6fed)">margin</text>
+
+  <!-- legend -->
+  <circle cx="18" cy="176" r="5" fill="currentColor"/>
+  <text x="34" y="174" font-size="11" fill="currentColor">Standard solution sits on the edge. One unfavorable</text>
+  <text x="34" y="189" font-size="11" fill="currentColor">tie-break and the payoff drops to 0.248.</text>
+
+  <circle cx="18" cy="212" r="5" fill="var(--accent, #2f6fed)"/>
+  <text x="34" y="210" font-size="11" fill="currentColor">Interior-point solution keeps a margin, so every best</text>
+  <text x="34" y="225" font-size="11" fill="currentColor">response still pays 0.655.</text>
+
+  <text x="180" y="244" text-anchor="middle" font-size="10" fill="var(--muted, #666)">Payoffs from the probabilistic attack graph benchmark.</text>
+</svg>
