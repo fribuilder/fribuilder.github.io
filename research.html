@@ -250,7 +250,7 @@
         <br><span class="small">* equal contribution</span>
       </p>
       <p class="pub-meta">
-        <span class="venue">under review</span>
+        <span class="venue">TMLR 2026</span>
         <span class="pub-links">
           <a href="https://arxiv.org/abs/2509.22984" target="_blank" rel="noopener">arXiv</a>
         </span>
@@ -321,6 +321,41 @@
             <text x="180" y="196" text-anchor="middle" font-size="10.5" fill="var(--muted, #666)">The weak model improves during use — no retraining.</text>
           </svg>
         </figure>
+      </div>
+    </article>
+
+    <!-- 1b -->
+    <article class="card pub">
+      <h2 class="pub-title">Attention is the Address, Values are the Message: Zero-Shot Reranking Below the Softmax</h2>
+      <p class="pub-authors">
+        <span class="me">Shuo Wu</span>
+        <br><span class="small">sole author</span>
+      </p>
+      <p class="pub-meta">
+        <span class="venue">under review, ICLR 2027</span>
+      </p>
+
+      <p class="hook">
+        A language model already knows which retrieved documents matter. This reads that signal
+        out of its attention in one pass.
+      </p>
+
+      <div class="pub-body">
+        <div>
+          <p class="pub-summary">
+            Attention-based rerankers score each retrieved document by how much attention the
+            query puts on it, then need a second "calibration" forward pass to cancel the model's
+            built-in bias toward some tokens. I show that these methods share one formula and differ
+            only in where they read attention, never in how they score it. AV-IP changes the scoring
+            itself: it compares the query's and the document's value vectors, and centering that score
+            provably does the calibration pass's job, so the second pass is no longer needed. Across
+            two frozen 7–8B models and eight BEIR datasets, even the weakest AV-IP variant beats the
+            strongest attention-mass baseline on macro nDCG@10. The margin is small (about +0.005), but
+            its per-query bootstrap confidence interval excludes zero on both models. Dropping the
+            baselines' calibration pass would save them 30–49% latency at a cost of 3.7–4.2 nDCG points;
+            AV-IP never pays it.
+          </p>
+        </div>
       </div>
     </article>
 
